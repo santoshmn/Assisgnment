@@ -121,16 +121,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
-}
 
-TIME_INPUT_FORMATS = [
-    '%I:%M:%S %p',  # 6:22:44 PM
-    '%I:%M %p',  # 6:22 PM
-    '%I %p',  # 6 PM
-    '%H:%M:%S',     # '14:30:59'
-    '%H:%M:%S.%f',  # '14:30:59.000200'
-    '%H:%M',        # '14:30'
-]
+
