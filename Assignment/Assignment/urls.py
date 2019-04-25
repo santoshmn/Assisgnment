@@ -18,6 +18,10 @@ from django.urls import path
 from doctors import views
 
 urlpatterns = [
-    path('admin/',admin.site.urls),
-    path('doctorlist/',views.DoctorList.as_view()),
+
+    path('admin/', admin.site.urls),
+    path('doctors/', views.DoctorList.as_view()),
+    path('avail/', views.AvailList.as_view()),
+
+
 ]
